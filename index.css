@@ -1,0 +1,59 @@
+.box {
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+  background: #c0c0c0;
+  box-shadow: 5px 5px 12px #757575, 300px -5px 12px #ffffff;
+  padding: 10px;
+}
+.box-click {
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+  background: #c0c0c0;
+  box-shadow: inset 5px 5px 12px #757575, inset -5px -5px 12px #ffffff;
+}
+.cross {
+  font-size: 70px;
+  padding: 10px;
+  color: red;
+}
+.zero {
+  font-size: 70px;
+  padding: 10px;
+  color: green;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+}
+button {
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 25px;
+padding: 10px 27px;
+border-color: transparent;
+background-color: transparent;
+border-radius: 50px;
+cursor: pointer;
+color: rgb(116, 118, 121);
+box-shadow: 9px 9px 16px rgba(134, 139, 146, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.781);
+}
+body {
+background-color: rgba(226, 228, 231, 0.897);
+}
+.glow {
+color: #fff;
+text-align: center;
+-webkit-animation: glow 1s ease-in-out infinite alternate;
+-moz-animation: glow 1s ease-in-out infinite alternate;
+animation: glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow {
+from {
+text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #9b0808, 0 0 40px #e60000, 0 0 50px #e6000c, 0 0 60px #e60073, 0 0 70px #e60073;
+}
+to {
+text-shadow: 0 0 20px #fff, 0 0 30px #a33535, 0 0 40px #e21a1a, 0 0 50px #ff4d5c, 0 0 60px #ff4d4d, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+}
+}

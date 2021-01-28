@@ -67,6 +67,7 @@ async function checkWinnerLogic() {
   let showAlert = false;
   let showDraw = false;
   counter++;
+  let allowAlert = true;
   for (const winsArr of winsArray) {
     if (
       itemArray[winsArr[0]] === itemArray[winsArr[1]] &&
@@ -79,6 +80,7 @@ async function checkWinnerLogic() {
           setTimeout(() => {
             showBox("X");
           }, 500);
+          allowAlert = false;
         }
       } else if (itemArray[winsArr[0]] === "O") {
         showAlert = removeListener();
@@ -86,9 +88,11 @@ async function checkWinnerLogic() {
           setTimeout(() => {
             showBox("O");
           }, 500);
+          allowAlert = false;
         }
       }
     } else {
+      if(allowAlert)
       showDraw = true;
     }
   }

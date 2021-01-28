@@ -78,14 +78,14 @@ async function checkWinnerLogic() {
         if (showAlert) {
           setTimeout(() => {
             showBox("X");
-          }, 100);
+          }, 500);
         }
       } else if (itemArray[winsArr[0]] === "O") {
         showAlert = removeListener();
         if (showAlert) {
           setTimeout(() => {
             showBox("O");
-          }, 100);
+          }, 500);
         }
       }
     } else {
@@ -96,7 +96,7 @@ async function checkWinnerLogic() {
     if (counter == 9)
       setTimeout(() => {
         alert("Draw!");
-      }, 100);
+      }, 500);
   }
 }
 
